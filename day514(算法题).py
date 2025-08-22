@@ -54,10 +54,18 @@ from datetime import *
 #      print(con)
 def num():
    num = 1000000007
-   for i in range(1,num+1):
-       if i*2021%1000000007 == 999999999:
-           print(i)
+   num2 =  999999999
+   # for i in range(1,num+1):
+   #     if i*2021%num == num2:
+   #         print(i)
+   #         return
+   while 1:
+       if num//2021>num2:
+           break
+       if num2 % 2021 == 0:
+           print(num2//2021)
            return
+       num2+=num
    print(0)
 if __name__ == '__main__':
     # sums(20)
